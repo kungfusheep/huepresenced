@@ -10,10 +10,10 @@ This Go program detects presence using a Philips Hue motion sensor and prevents 
 
 ## Installation
 
-Install with go get:
+Install
 
 ```sh 
-go get github.com/kungfusheep/huepresenced 
+git clone git@github.com:kungfusheep/huepresenced && cd huepresenced && go install
 ```
 
 ## Usage
@@ -42,7 +42,7 @@ go get github.com/kungfusheep/huepresenced
 ```sh
 export HUEIP=192.168.1.2
 export HUESERNAME=your-hue-username
-./huepresenced -sensor 5 -log
+huepresenced -sensor 5 -log
 ```
 
 This will monitor the Hue motion sensor with ID `3` and log presence detection events.
